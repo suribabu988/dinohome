@@ -30,34 +30,39 @@ $(document).ready(function(){
 
 //menu button
 $('.menuButton').click(function(){
-	$('.menuFullScreen').show();
-	$('.menuFullScreen .right').addClass('RightslideForwards').removeClass('RightslideReverse');
-	$('.menuFullScreen .right').css('animation-name','RightSlide');
-	$('.menuFullScreen .left').addClass('LeftslideForwards').removeClass('LeftslideReverse');	
-	$('.menuFullScreen .left').css('animation-name','LeftSlide');
-//	$('.menuFullScreen .left').addClass('LeftslideReverse').removeClass('LeftslideForwards');
-//	$('.menuFullScreen .right').addClass('RightslideReverse').removeClass('RightslideForwards');
+	$('.menuFullScreen').removeClass('menuNone');
+		$('.menuFullScreen .right').addClass('RightslideOpen').removeClass('RightslideClose');
+		$('.menuFullScreen .left').addClass('LeftslideOpen').removeClass('LeftslideClose');	
 
 });
-$('.menuFullScreen .right .close').click(function(){
-	$('.menuFullScreen').hide("slow", function(){
-	 $('.menuFullScreen .left').addClass('LeftslideReverse').removeClass('LeftslideForwards');
-	 $('.menuFullScreen .right').addClass('RightslideReverse').removeClass('RightslideForwards');
-	});	
-});
+
+	
+		$('.menuFullScreen .right .close').click(function(){
+				$('.menuFullScreen .right').addClass('RightslideClose').removeClass('RightslideOpen');
+			$('.menuFullScreen .left').addClass('LeftslideClose').removeClass('LeftslideOpen');
+			setTimeout(function () {
+				$('.menuFullScreen').addClass('menuNone');
+			}, 1500);
+	});
+
+
 
 // navbar's end
 $('.miles-right .mileslink').mouseenter(function(){
-$(this).find('.text').css('opacity','0');	
+	$(this).find('.text').addClass('godownEle').removeClass('goupinEle');	
+	$(this).find('.overlay').css('opacity','0');
 });
 $('.miles-right .mileslink').mouseleave(function(){
-$(this).find('.text').css('opacity','1');	
+	$(this).find('.text').addClass('goupinEle').removeClass('godownEle');
+	$(this).find('.overlay').css('opacity', '0.3');	
 });
 $('.epicbg .mileslink').mouseenter(function(){
-$(this).find('.text').css('opacity','0');	
+	$(this).find('.text').addClass('godownEle').removeClass('goupinEle');
+	$(this).find('.overlay').css('opacity', '0');	
 });
 $('.epicbg .mileslink').mouseleave(function(){
-$(this).find('.text').css('opacity','1');	
+	$(this).find('.text').addClass('goupinEle').removeClass('godownEle');
+	$(this).find('.overlay').css('opacity', '0.3');	
 });
 
 // Modal video
@@ -109,5 +114,82 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
         }
     });
 	
-	
+
+// 3D Mouse Effects
+	(function() {
+  var container = document.getElementById("container"),
+    inner = document.getElementById("inner");
+
+  var mouse = {
+    _x: 0,
+    _y: 0,
+    x: 0,
+    y: 0,
+    updatePosition: function(event) {
+      var e = event || window.event;
+      this.x = e.clientX - this._x;
+      this.y = (e.clientY - this._y) * -1;
+    },
+    setOrigin: function(e) {
+      this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+      this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+    },
+    show: function() {
+      return "(" + this.x + ", " + this.y + ")";
+    }
+  };
+
+  mouse.setOrigin(container);
+
+  //-----------------------------------------
+
+  var counter = 0;
+  var updateRate = 10;
+  var isTimeToUpdate = function() {
+    return counter++ % updateRate === 0;
+  };
+
+  //-----------------------------------------
+
+  var onMouseEnterHandler = function(event) {
+    update(event);
+  };
+
+  var onMouseLeaveHandler = function() {
+    inner.style = "";
+  };
+
+  var onMouseMoveHandler = function(event) {
+    if (isTimeToUpdate()) {
+      update(event);
+    }
+  };
+
+  //-----------------------------------------
+
+  var update = function(event) {
+    mouse.updatePosition(event);
+    updateTransformStyle(
+      (mouse.y / inner.offsetHeight / 2).toFixed(2),
+      (mouse.x / inner.offsetWidth / 2).toFixed(2)
+    );
+  };
+
+  var updateTransformStyle = function(x, y) {
+    var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+    inner.style.transform = style;
+    inner.style.webkitTransform = style;
+    inner.style.mozTransform = style;
+    inner.style.msTransform = style;
+    inner.style.oTransform = style;
+  };
+
+  //-----------------------------------------
+
+  container.onmouseenter = onMouseEnterHandler;
+  container.onmouseleave = onMouseLeaveHandler;
+  container.onmousemove = onMouseMoveHandler;
+})();
+
+
 });
