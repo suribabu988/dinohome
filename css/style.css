@@ -986,6 +986,9 @@ background: url(../../static/img/home_video_bg.jpg) no-repeat center center tran
     margin-top: 4px;
     display: block;
 }
+.sidenavHome{
+    padding-top: 2.5rem;
+}
 
 .menuFullScreen {
     position: fixed;
