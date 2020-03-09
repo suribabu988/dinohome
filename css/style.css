@@ -586,11 +586,11 @@ z-index:1;
 .miles-right .text {
    display: inline-block;
    opacity: 1;
-  padding: 17% 19%;
+  /* padding: 17% 19%; */
     vertical-align: middle;
-	max-height: 360px; 
-    min-height: 175px;
-    line-height: normal;
+	/* max-height: 360px; 
+    min-height: 175px; */
+    line-height: 11;
     text-align: left;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -1175,7 +1175,7 @@ background: url(../../static/img/home_video_bg.jpg) no-repeat center center tran
     margin-right: 9px;
 }
 
-}
+
 .menuFullScreen .left .moreItems {
     position: absolute;
     top: 0;
@@ -2042,7 +2042,7 @@ padding: 0 22px 0 0 !important;
 @media only screen and (max-width: 1024px)
 {
 .miles-right .text{
-	padding: 0 19%;
+	/* padding: 0 19%; */
 }
 }
 
