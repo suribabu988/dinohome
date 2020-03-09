@@ -759,7 +759,7 @@ background: url(../../static/img/home_video_bg.jpg) no-repeat center center tran
 }
 .destination .container {
     font-size: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 .destination .container .map {
     margin-left: -160px;
