@@ -87,12 +87,15 @@ $('.destination .container .map .links a').mouseleave(function(){
 $('.menuFullScreen .right nav a').mouseover(function(){
 	var sideLink = $(this).attr('data-sidelink');
 	$(this).css('color','#53af3a');
-	$('.menuFullScreen .left .moreItems .moreItem').css('opacity','0');
-	$('.menuFullScreen .left .moreItems .moreItem').filter('[data-linkside='+sideLink+']').css('opacity','1');
+	$('.menuFullScreen .left .moreItems .moreItem').css('display','none');
+	$('.menuFullScreen .left .moreItems .moreItem').filter('[data-linkside=' + sideLink + ']').css('display','contents');
+
 });
 $('.menuFullScreen .right nav a').mouseleave(function(){
 	var sideLink = $(this).attr('data-sidelink');
 	$(this).css('color','white');
+	//$('.selected').css('color', '#53af3a');
+	
 });
 
 // select box
