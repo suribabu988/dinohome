@@ -467,8 +467,20 @@ header .menu nav a {
     z-index: 0;
 }
 
+.padtp {
+    padding: 5px 2px 2px 2px;
+}
+
+.padbp {
+    padding: 2px;
+}
+
+.miles-left .inner {
+    padding-right: 5px;
+}
+
 .miles-left a {
-    line-height: 380px;
+    line-height: 356px;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -1146,6 +1158,28 @@ header .menu nav a {
     background: url(../images/eco-lodge.png) no-repeat 0px 0px transparent;
 }
 
+.epicbg .travels.dinoTravelAppear {
+    padding-top: 2rem;
+}
+
+.item-filter-select,
+.item-filter-sub-select {
+    padding: 8px 16px;
+}
+
+select.item-filter-select option[value="all"] {
+    background-image: url(../images/epic-journey.png);
+
+        /* background: url(../images/sprite.png) no-repeat top left transparent;
+    display: inline-block;
+    zoom: 1;
+    background-position: -139px -357px;
+    width: 29px;
+    height: 29px;
+    text-indent: -6000px;
+    text-align: left; */
+}
+
 /* slide navbar */
 .menuButton {
     background: #53af3a;
@@ -1164,6 +1198,41 @@ header .menu nav a {
     -o-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
 }
+
+@keyframes MenuopenRight {
+    from {
+        right: -76px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+
+@keyframes MenucloseRight {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -76px;
+    }
+}
+
+
+.MenuslideOpen {
+    -webkit-animation: MenuopenRight 1s;
+    animation: MenuopenRight 1s;
+    animation-fill-mode: forwards;
+}
+
+.MenuslideClose {
+    -webkit-animation: MenucloseRight 1s;
+    animation: MenucloseRight 1s;
+    animation-fill-mode: forwards;
+}
+
 
 .menuButton .middle {
     vertical-align: middle;
@@ -2016,12 +2085,12 @@ footer .copyright a {
 .epicbg a .text {
     display: inline-block;
     opacity: 1;
-    padding: 5% 0;
+    /* padding: 5% 0;
     margin: 10% 0;
     max-height: 350px;
-    min-height: 180px;
+    min-height: 180px; */
     vertical-align: middle;
-    line-height: normal;
+    line-height: 13;
     text-align: left;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
