@@ -16,8 +16,8 @@ $(document).ready(function(){
 		if (jQuery(window).width() < 1200 && jQuery(window).height() > 0) {
 			jQuery('.menuButton').css('opacity','1');
 			
-		}  
-		
+		}  		
+
 	});
 
 	if (jQuery(window).width() < 1200 && jQuery(window).height() > 0) {
@@ -67,6 +67,14 @@ $('.epicbg .mileslink').mouseenter(function(){
 });
 $('.epicbg .mileslink').mouseleave(function(){
 	$(this).find('.text').addClass('goupinEle').removeClass('godownEle');
+	$(this).find('.overlay').css('opacity', '0.3');	
+});
+$('.package.alsoLike .pushs a').mouseenter(function(){
+	$(this).find('.txt').addClass('godownEle').removeClass('goupinEle');
+	$(this).find('.overlay').css('opacity', '0');	
+});
+$('.package.alsoLike .pushs a').mouseleave(function(){
+	$(this).find('.txt').addClass('goupinEle').removeClass('godownEle');
 	$(this).find('.overlay').css('opacity', '0.3');	
 });
 
@@ -128,4 +136,8 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 
         }
     });
+	
+//chart	
+
+	
 	});
