@@ -3178,6 +3178,13 @@ footer .copyright a {
     }
 }
 
+@media only screen and (max-width: 575px) {
+	.epicbg #experience .nav-tabs .nav-item.col-xs-6.col-sm-6.col-md-3.p-0{
+		flex: 0 0 50%;
+		max-width: 50%;		
+	}
+}
+
 @media only screen and (max-width: 550px) {
     .fullHeight .middle {
         padding-left: 20px;
@@ -3239,6 +3246,9 @@ footer .copyright a {
         font-weight: 700;
         font-size: 1rem;
     }
+	.item-filter-select, .item-filter-sub-select{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 320px) {
