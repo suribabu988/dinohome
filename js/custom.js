@@ -137,7 +137,46 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
         }
     });
 	
-//chart	
 
 	
+
+	$('.nav-tabs-dropdown').each(function (i, elm) {
+		$(elm).text($(elm).next('ul').find('li.active a').text());
+		$('.nav-tabs-dropdown').text("Experience");
+
 	});
+
+	$('.nav-tabs-dropdown').on('click', function (e) {
+
+		e.preventDefault();
+
+		$(e.target).toggleClass('open').next('ul').slideToggle();
+
+	});
+
+	$('#nav-tabs-wrapper a[data-toggle="tab"]').on('click', function (e) {
+
+		e.preventDefault();
+
+		$(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());".menuFullScreen.left.moreItems.moreItem >.text"
+.css('background','#fff');
+	});
+
+// scroll
+
+	$(".menuFullScreen .left .moreItems .moreItem>.logo").show();
+	$(".menuFullScreen .left .moreItems .moreItem").is(function () {
+	var $textThis = $(this);
+		$textThis.find('.text').scroll(function (){
+		var navheight = $(this).scrollTop();
+
+		if(navheight > 0){
+			$textThis.find('.logo').hide('slow');
+		}
+		else{
+			$textThis.find('.logo').show('hide');
+		}
+		});
+	});
+
+});
