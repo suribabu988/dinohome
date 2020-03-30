@@ -138,8 +138,6 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
     });
 	
 
-	
-
 	$('.nav-tabs-dropdown').each(function (i, elm) {
 		$(elm).text($(elm).next('ul').find('li.active a').text());
 		$('.nav-tabs-dropdown').text("Experience");
@@ -158,8 +156,8 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 
 		e.preventDefault();
 
-		$(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());".menuFullScreen.left.moreItems.moreItem >.text"
-.css('background','#fff');
+		$(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());
+		$(".menuFullScreen.left.moreItems.moreItem >.text").css('background','#fff');
 	});
 
 // scroll
@@ -178,5 +176,21 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 		}
 		});
 	});
+
+
+	// $('.miles-right .padtp a.mileslink').on('click',function(){
+	// 	var categoryLink = $(this).attr('href');
+	// 	var categoryId = categoryLink.replace("tours.html#", "");
+	// 	var oldUrl;
+	// 		$("html, body").animate({ scrollTop: 0 }, "slow");
+	// 	$('.epicbg #experience .nav-tabs a[href^="#"]').each(function(){ 
+	// 		$('.epicbg #experience .nav-tabs .nav-link.mileslink').css('display','none');
+	// 		oldUrl = $(this).attr("href");
+	// 		alert(oldUrl);
+	// 		if(oldUrl == categoryId){
+	// 			$(this).css('display','block');
+	// 		}
+		// });
+	//	});
 
 });

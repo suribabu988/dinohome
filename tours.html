@@ -29,7 +29,7 @@
                     <a href="#">About us</a>
                     <a class="posts" href="#">Blog</a>
                     <a class="contact" href="#">Meet the team</a>
-                    <a class="enquire popup" href="#">Let's Talk! </a>
+                    <a class="enquire popup" data-toggle="modal" href="#InguireModal">Let's Talk! </a>
                 </nav>
             </div>
         </div>
@@ -83,29 +83,29 @@
             <section class="epicbg">
                 <div class="container" id="experience">
 
-                    <ul class="nav nav-tabs row" role="tablist">
-                        <li class="nav-item col-xs-6 col-sm-6 col-md-3 p-0">
-                            <a class="nav-link mileslink active" href="#self-guided" data-toggle="tab">
+                    <ul class="nav nav-tabs row m-auto" role="tablist">
+                        <li class="nav-item p-0">
+                            <a href="#domestic" class="nav-link mileslink active" data-toggle="tab">
                                 <div class="selfguided bgcss">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="middle">
                                             <img src="images/journey-white.png">
-                                            <h2>Self Guided Hikes </h2>
+                                            <h2>Domestic India</h2>
                                         </div>
                                     </div>
                                     <div class="bottom"><span class="pix"><span></span></span></div>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item col-xs-6 col-sm-6 col-md-3 p-0">
-                            <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                        <li class="nav-item p-0">
+                            <a href="#asian" class="nav-link mileslink" data-toggle="tab">
                                 <div class="selfguided bgcss">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="middle">
                                             <img src="images/hidden-tribes-logo-white.png">
-                                            <h2>Extensions</h2>
+                                            <h2>Asian</h2>
                                         </div>
                                     </div>
                                     <div class="bottom"><span class="pix"><span></span></span></div>
@@ -113,14 +113,14 @@
 
                             </a>
                         </li>
-                        <li class="nav-item col-xs-6 col-sm-6 col-md-3 p-0">
-                            <a class="nav-link mileslink" href="#crafted-journeys" data-toggle="tab">
+                        <li class="nav-item p-0">
+                            <a href="#europe" class="nav-link mileslink" data-toggle="tab">
                                 <div class="selfguided bgcss">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="middle">
                                             <img src="images/experience-logo-white.png">
-                                            <h2>Crafted Journeys </h2>
+                                            <h2>Europe</h2>
                                         </div>
                                     </div>
                                     <div class="bottom"><span class="pix"><span></span></span></div>
@@ -128,26 +128,41 @@
 
                             </a>
                         </li>
-                        <li class="nav-item col-xs-6 col-sm-6 col-md-3 p-0">
-                            <a class="nav-link mileslink" href="#eco-lodges" data-toggle="tab">
+                        <li class="nav-item p-0">
+                            <a href="#adventure" class="nav-link mileslink" data-toggle="tab">
                                 <div class="selfguided bgcss">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="middle">
                                             <img src="images/lodge-white.png">
-                                            <h2>Eco Lodges</h2>
+                                            <h2>Adventure</h2>
                                         </div>
                                     </div>
                                     <div class="bottom"><span class="pix"><span></span></span></div>
                                 </div>
 
+                            </a>
+                        </li>
+                        <li class="nav-item p-0">
+                            <a href="#pilgrimage" class="nav-link mileslink" data-toggle="tab">
+                                <div class="selfguided bgcss">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <img src="images/lodge-white.png">
+                                            <h2>Pilgrimage</h2>
+                                        </div>
+                                    </div>
+                                    <div class="bottom"><span class="pix"><span></span></span></div>
+                                </div>
+                        
                             </a>
                         </li>
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div id="self-guided" class="container tab-pane active"><br>
+                        <div id="domestic" class="container tab-pane active"><br>
                             <div class="experienceDetails">
                                 <div class="top">
                                     <div class="dinoTravelAppear">
@@ -155,7 +170,7 @@
                                             style="background-position: 0px -840px;"></div>
                                         <img src="images/epic-journey.png" class="loadImageHide">
                                     </div>
-                                    <h1 class="dinoTravelAppear">Self Guided Hikes </h1>
+                                    <h1 class="dinoTravelAppear">DOMESTIC INDIA </h1>
                                     <p class="dinoTravelAppear">Our Self Guided Hikes empower you to hike on your own,
                                         with the added support and infrastructure of a tour operator. These trips save
                                         you hours of due diligence, inquiries and reservation requests. Each trip comes
@@ -188,8 +203,8 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a href="/package.html" class="nav-link mileslink active" 
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -202,8 +217,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -216,8 +231,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -238,7 +253,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="Kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -251,7 +266,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="Kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -264,7 +279,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -284,7 +299,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="extensions" class="container tab-pane fade"><br>
+                        <div id="asian" class="container tab-pane fade"><br>
                             <div class="experienceDetails">
                                 <div class="top">
                                     <div class="dinoTravelAppear">
@@ -292,7 +307,7 @@
                                             style="background-position: 0px -840px;"></div>
                                         <img src="images/hidden-tribes.png" class="loadImageHide">
                                     </div>
-                                    <h1 class="dinoTravelAppear">EXTENSIONS</h1>
+                                    <h1 class="dinoTravelAppear">ASIAN</h1>
                                     <p class="dinoTravelAppear">Our Self Guided hikes and Adventure Itineraries are full
                                         experiences by themselves, but sometimes you just can't get enough. Our
                                         extensions can be easily added on to an existing itinerary.</p>
@@ -323,8 +338,8 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -337,8 +352,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -351,8 +366,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -373,7 +388,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -386,7 +401,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -399,7 +414,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -419,7 +434,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="crafted-journeys" class="container tab-pane fade"><br>
+                        <div id="europe" class="container tab-pane fade"><br>
                             <div class="experienceDetails">
                                 <div class="top">
                                     <div class="dinoTravelAppear">
@@ -427,7 +442,7 @@
                                             style="background-position: 0px -840px;"></div>
                                         <img src="images/endangered-wildlife.png" class="loadImageHide">
                                     </div>
-                                    <h1 class="dinoTravelAppear">CRAFTED JOURNEYS</h1>
+                                    <h1 class="dinoTravelAppear">EUROPE</h1>
                                     <p class="dinoTravelAppear">In addition to our self guided hiking tours, we also
                                         offer adventure tours that feature a mixture of outdoor activities, culture and
                                         relaxation. A great choice for honeymooners, couples or friends that would like
@@ -460,8 +475,8 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -474,8 +489,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -488,8 +503,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -510,7 +525,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -523,7 +538,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -536,7 +551,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -556,7 +571,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="eco-lodges" class="container tab-pane fade"><br>
+                        <div id="adventure" class="container tab-pane fade"><br>
                             <div class="experienceDetails">
                                 <div class="top">
                                     <div class="dinoTravelAppear">
@@ -564,7 +579,138 @@
                                             style="background-position: 0px -840px;"></div>
                                         <img src="images/eco-lodge.png" class="loadImageHide">
                                     </div>
-                                    <h1 class="dinoTravelAppear">ECO LODGES</h1>
+                                    <h1 class="dinoTravelAppear">ADVENTURE</h1>
+                                    <p class="dinoTravelAppear">Stay in lodging that puts nature, conservation and
+                                        environmental protection at the forefront of their offering. Focus on
+                                        sustainable tourism.</p>
+                                </div>
+                            </div>
+                            <div class="travels dinoTravelAppear">
+                        
+                                <div class="item-filter">
+                                    <form>
+                                        <select class="item-filter-select">
+                                            <option value="all">&#x1F310; Select your region</option>
+                                            <option value="europe">&#9771; Europe</option>
+                                            <option value="south-america">&#9772; South America</option>
+                                        </select>
+                                        <select class="item-filter-sub-select">
+                                            <option value="all">&#9759; Select one activity</option>
+                                            <option value="trekking">&#9768; Trekking</option>
+                                            <option value="kayaking">&#9784; Kayaking</option>
+                                            <option value="swimming">&#9798; Swimming</option>
+                                            <option value="paragliding">&#9868; Paragliding</option>
+                                            <option value="canyoning">&#9791; Canyoning</option>
+                                        </select>
+                        
+                                    </form>
+                                </div>
+                                <div class="item-display pt-4 pl-0 pr-0" id="item-display">
+                                    <div class="item europe" id="item-europe" data-type="europe" data-name="Europe">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
+                                                    <a class="nav-link mileslink active" href="/package.html">
+                                                        <div class="selfguided bgcss">
+                                                            <div class="overlay"></div>
+                                                            <div class="text">
+                                                                <div class="middle">
+                                                                    <img src="images/journey-white.png">
+                                                                    <h2>Self Guided Hikes </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 p-0 subitem" data-subtype="trekking">
+                                                    <a class="nav-link mileslink active" href="/package.html">
+                                                        <div class="selfguided bgcss">
+                                                            <div class="overlay"></div>
+                                                            <div class="text">
+                                                                <div class="middle">
+                                                                    <img src="images/journey-white.png">
+                                                                    <h2>Self Guided Hikes </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 p-0 subitem" data-subtype="trekking">
+                                                    <a class="nav-link mileslink active" href="/package.html">
+                                                        <div class="selfguided bgcss">
+                                                            <div class="overlay"></div>
+                                                            <div class="text">
+                                                                <div class="middle">
+                                                                    <img src="images/journey-white.png">
+                                                                    <h2>Self Guided Hikes </h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="item south-america" data-type="south-america" data-name="South America" data-price="5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4 p-0 subitem" data-subtype="trekking">
+                                                    <a class="nav-link mileslink" href="/package.html">
+                                                        <div class="selfguided bgcss">
+                                                            <div class="overlay"></div>
+                                                            <div class="text">
+                                                                <div class="middle">
+                                                                    <img src="images/hidden-tribes-logo-white.png">
+                                                                    <h2>Extensions</h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 p-0 subitem" data-subtype="trekking">
+                                                    <a class="nav-link mileslink" href="/package.html">
+                                                        <div class="selfguided bgcss">
+                                                            <div class="overlay"></div>
+                                                            <div class="text">
+                                                                <div class="middle">
+                                                                    <img src="images/hidden-tribes-logo-white.png">
+                                                                    <h2>Extensions</h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 p-0 subitem" data-subtype="trekking">
+                                                    <a class="nav-link mileslink" href="/package.html">
+                                                        <div class="selfguided bgcss">
+                                                            <div class="overlay"></div>
+                                                            <div class="text">
+                                                                <div class="middle">
+                                                                    <img src="images/hidden-tribes-logo-white.png">
+                                                                    <h2>Extensions</h2>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pilgrimage" class="container tab-pane fade"><br>
+                            <div class="experienceDetails">
+                                <div class="top">
+                                    <div class="dinoTravelAppear">
+                                        <div class="sprite eco-lodge" data-frames="43" data-columns="6"
+                                            style="background-position: 0px -840px;"></div>
+                                        <img src="images/eco-lodge.png" class="loadImageHide">
+                                    </div>
+                                    <h1 class="dinoTravelAppear">PILGRIMAGE</h1>
                                     <p class="dinoTravelAppear">Stay in lodging that puts nature, conservation and
                                         environmental protection at the forefront of their offering. Focus on
                                         sustainable tourism.</p>
@@ -595,8 +741,8 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="kayaking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -609,8 +755,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -623,8 +769,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink active" href="#self-guided"
-                                                        data-toggle="tab">
+                                                    <a class="nav-link mileslink active" href="/package.html"
+                                                        >
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -645,7 +791,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -658,7 +804,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -671,7 +817,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-md-4 p-0 subitem" data-subtype="trekking">
-                                                    <a class="nav-link mileslink" href="#extensions" data-toggle="tab">
+                                                    <a class="nav-link mileslink" href="/package.html">
                                                         <div class="selfguided bgcss">
                                                             <div class="overlay"></div>
                                                             <div class="text">
@@ -808,314 +954,533 @@
 </footer>
 
 <!-- 2nd navbar -->
-<div class="menuFullScreen menuNone">
-    <div class="left">
-        <div class="moreItems middleParent">
-            <div class="moreItem home selected" data-linkside="home" style="display: contents;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Home</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="menuFullScreen menuNone" >
+	<div class="left">
+		<div class="moreItems middleParent">
+			<div class="moreItem home selected" data-linkside="home" style="display: contents;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Home</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+					<h2>Experiences</h2>
+					<a href="#">
+						<img src="images/journey.png">
+						<h3>Domestic India </h3>
+					</a>
+					<a href="#">
+						<img src="images/tribes.png">
+						<h3>Asian</h3>
+					</a>
+					<a href="#">
+						<img src="images/endangered.png">
+						<h3>Europe </h3>
+					</a>
+					<a href="#">
+						<img src="images/lodge.png">
+						<h3>Adventure</h3>
+					</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+				
+			<div class="moreItem home" data-linkside="destination" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Destinations</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+					<h2>Experiences</h2>
+					<a href="#">
+						<img src="images/journey.png">
+						<h3>Domestic India </h3>
+					</a>
+					<a href="#">
+						<img src="images/tribes.png">
+						<h3>Asian</h3>
+					</a>
+					<a href="#">
+						<img src="images/endangered.png">
+						<h3>Europe </h3>
+					</a>
+					<a href="#">
+						<img src="images/lodge.png">
+						<h3>Adventure</h3>
+					</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+				</div>
+				</div>
 
+			<div class="moreItem home" data-linkside="epicjourney" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Experiences</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+					<h2>Experiences</h2>
+					<a href="#">
+						<img src="images/journey.png">
+						<h3>Domestic India </h3>
+					</a>
+					<a href="#">
+						<img src="images/tribes.png">
+						<h3>Asian</h3>
+					</a>
+					<a href="#">
+						<img src="images/endangered.png">
+						<h3>Europe </h3>
+					</a>
+					<a href="#">
+						<img src="images/lodge.png">
+						<h3>Adventure</h3>
+					</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+			</div>
+				</div>
+				
+			<div class="moreItem home" data-linkside="dinomiles" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Pygmy miles</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+					<h2>Experiences</h2>
+					<a href="#">
+						<img src="images/journey.png">
+						<h3>Domestic India </h3>
+					</a>
+					<a href="#">
+						<img src="images/tribes.png">
+						<h3>Asian</h3>
+					</a>
+					<a href="#">
+						<img src="images/endangered.png">
+						<h3>Europe </h3>
+					</a>
+					<a href="#">
+						<img src="images/lodge.png">
+						<h3>Adventure</h3>
+					</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+			</div>
+				</div>
+				
+			<div class="moreItem home" data-linkside="aboutus" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>About us</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+					<h2>Experiences</h2>
+					<a href="#">
+						<img src="images/journey.png">
+						<h3>Domestic India </h3>
+					</a>
+					<a href="#">
+						<img src="images/tribes.png">
+						<h3>Asian</h3>
+					</a>
+					<a href="#">
+						<img src="images/endangered.png">
+						<h3>Europe </h3>
+					</a>
+					<a href="#">
+						<img src="images/lodge.png">
+						<h3>Adventure</h3>
+					</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+		</div>
+				</div>
 
-            <div class="moreItem home" data-linkside="destination" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Destinations</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<div class="moreItem home" data-linkside="posts" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Blog</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+					<h2>Experiences</h2>
+					<a href="#">
+						<img src="images/journey.png">
+						<h3>Domestic India </h3>
+					</a>
+					<a href="#">
+						<img src="images/tribes.png">
+						<h3>Asian</h3>
+					</a>
+					<a href="#">
+						<img src="images/endangered.png">
+						<h3>Europe </h3>
+					</a>
+					<a href="#">
+						<img src="images/lodge.png">
+						<h3>Adventure</h3>
+					</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+				</div>
+				</div>
 
-            <div class="moreItem home" data-linkside="epicjourney" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Experiences</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<div class="moreItem home" data-linkside="contact" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Meet the team</h2>
+				<h3>Journeys Worth Taking</h3>
+				<p>We customize adventure itineraries, book your travel and then support you 24 hours a day during your trip.</p>
+				<div class="pushs">
+				<h2>Experiences</h2>
+				<a href="#">
+				<img src="images/journey.png">
+				<h3>Domestic India </h3>
+				</a>
+				<a href="#">
+				<img src="images/tribes.png">
+				<h3>Asian</h3>
+				</a>
+				<a href="#">
+				<img src="images/endangered.png">
+				<h3>Europe </h3>
+				</a>
+				<a href="#">
+				<img src="images/lodge.png">
+				<h3>Adventure</h3>
+				</a>
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+				</div>
+				</div>
 
-            <div class="moreItem home" data-linkside="dinomiles" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Pygmy miles</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<div class="moreItem home" data-linkside="enquire" style="display: none;">
+				<div class="logo">Dino Travel</div>
+				<div class="bg"></div>
+				<div class="text">
+				<div class="scroll">
+				<div class="middle">
+				<h2>Let's Talk!</h2>
+				<div class="pushs">
+								<form class="inguireForm">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+											<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+											<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+											<input class="form-control" name="email" placeholder="E-mail" type="text" required />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+											<select class="form-control" id="sel1">
+												<option>I would like to:</option>
+												<option>I have a general question</option>
+												<option>I would like a detailed quotation for a specific journey</option>
+												<option>Set up a consultation for a "From Scratch" Journey</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+											<select class="form-control" id="sel1">
+												<option>Select a journey</option>
+												<option>W-Trek from West to East: See the Towers at Sunrise</option>
+												<option>Tour du Mont Blanc - Self Guided</option>
+												<option>W-Trek East to West - in comfort and style</option>
+												<option>The Great Self Guided Treks of Patagonia - W-Trek and El Chaltén</option>
+												<option>From Scratch South African Adventure</option>
+												<option>Adventurous Argentina</option>
+												<option>Tour du Mont Blanc - Privately Guided with Glacier hiking</option>
+												<option>Secrets of the Bolivian Altiplano</option>
+												<option>Refugio Ecologico Caiman</option>
+												<option>Sukau Rainforest Lodge</option>
+												<option>Skorpios Cruises Patagonia - Chonos Route</option>
+												<option>Endangered wildlife of Borneo</option>
+												<option>Explora Patagonia</option>
+												<option>The Lodge at Chaa Creek</option>
+												<option>The Uchupiamonas at Chalalan</option>
+												<option>Awasi Atacama</option>
+												<option>Multi-Sport adventure near Mont Blanc</option>
+												<option>Campi Ya Kanzi</option>
+												<option>Fazenda Barranco Alto</option>
+												<option>Remota Lodge</option>
+												<option>Eco Camp Patagonia</option>
+												<option>Kichwa Añangu</option>
+												<option>Explorer's Inn Tambopata Ecolodge</option>
+												<option>Kapawi Eco Lodge and Reserve</option>
+												<option>The Highlands</option>
+												<option>11 Day Safari in Tanzania: The Western Circuit</option>
+												<option>Self Guided W-Trek and Multi-Sport Adventure in Patagonia</option>
+												<option>Camino de Santiago Self Guided - 14 nights</option>
+												<option>The Haute Route - Self-Guided Tour</option>
+												<option>The West Highland Way</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+											<input class="form-control" id="datepickerstart" name="startdate" placeholder="Select start date" required
+												autofocus />
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+											<input class="form-control" id="datepickerend" name="enddate" placeholder="Select end date" required
+												autofocus />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+											<input class="form-control" name="quantity" placeholder="Number of people?" type="text" required />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+											<textarea class="form-control" name="message" placeholder="Your message" rows="4" required></textarea>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+											<div>
+												<span></span>
+												<strong>More Service:</strong> 24 hours a day while you travel
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+											<div>
+												<span></span>
+												<strong>More Trust:</strong> price transparency and never lose your deposit
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+											<div>
+												<span></span>
+												<strong>More Expertise:</strong> 40 countries and counting
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+											<div style="display: inline-block;">
+												<span></span>
+												<strong>More Customization:</strong> Pygmy Itineraries are completely customizable
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="button big">Submit</button>
+								</form>
 
-            <div class="moreItem home" data-linkside="aboutus" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>About us</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="moreItem home" data-linkside="posts" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Blog</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="moreItem home" data-linkside="contact" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Meet the team</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="moreItem home" data-linkside="enquire" style="display: none;">
-                <div class="logo">Dino Travel</div>
-                <div class="bg"></div>
-                <div class="text">
-                    <div class="scroll">
-                        <div class="middle">
-                            <h2>Let's Talk!</h2>
-                            <h3>Journeys Worth Taking</h3>
-                            <p>We customize adventure itineraries, book your travel and then support you 24 hours a day
-                                during your trip.</p>
-                            <div class="pushs">
-                                <h2>Experiences</h2>
-                                <a href="#">
-                                    <img src="images/journey.png">
-                                    <h3>Self Guided Hikes </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/tribes.png">
-                                    <h3>Extensions</h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/endangered.png">
-                                    <h3>Crafted Journeys </h3>
-                                </a>
-                                <a href="#">
-                                    <img src="images/lodge.png">
-                                    <h3>Eco Lodges</h3>
-                                </a>
-                            </div>
-                            <a href="/" class="button big">Go to homepage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="right middleParent">
-        <div class="close">Close</div>
-        <nav class="">
-            <a href="/" class="sidenavHome selected" data-sidelink="home">Home</a>
-            <a class="destinations" href="#" data-sidelink="destination">Destinations</a>
-            <a class="experiences" href="#" data-sidelink="epicjourney">Experiences</a>
-            <a href="#" data-sidelink="dinomiles">Dino miles</a>
-            <a href="#" data-sidelink="aboutus">About us</a>
-            <a class="posts" href="#" data-sidelink="posts">Blog</a>
-            <a class="contact" href="#" data-sidelink="contact">Meet the team</a>
-            <a class="enquire" href="#" data-sidelink="enquire">Let's Talk! </a>
-        </nav>
-        <div class="contact">
-            <a href="tel:+1(414)377-3555" class="tel">+1 (414) 377-3555</a>
-            <div></div>
-            <a href="mailto:info@dinotravel.in" class="email">info@dinotravel.in</a>
-        </div>
-    </div>
-
+				</div>
+				<a href="/" class="button big">Go to homepage</a>
+				</div>
+				</div>
+				</div>
+				</div>
+								
+		</div>	
+	</div>
+	
+	<div class="right middleParent" >
+		<div class="close">Close</div>
+		<nav class="">
+			<a href="/" class="sidenavHome selected" data-sidelink="home">Home</a>
+			<a class="destinations" href="#" data-sidelink="destination">Destinations</a>
+			<a class="experiences" href="#" data-sidelink="epicjourney">Experiences</a>
+			<a href="#" data-sidelink="dinomiles">Dino miles</a>
+			<a href="#" data-sidelink="aboutus">About us</a>
+			<a class="posts" href="#" data-sidelink="posts">Blog</a>
+			<a class="contact" href="#" data-sidelink="contact">Meet the team</a>
+			<a class="enquire" href="#" data-sidelink="enquire">Let's Talk! </a>
+		</nav>
+			<div class="contact">
+			<a href="tel:+1(414)377-3555" class="tel">+1 (414) 377-3555</a>
+			<div></div>
+			<a href="mailto:info@dinotravel.in" class="email">info@dinotravel.in</a>
+			</div>
+	</div>
+	
 </div>
 <!-- 2nd navbar end-->
+
+<!-- The Modal -->
+<div class="modal fade" id="InguireModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Let's Talk!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form class="inguireForm">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                            <input class="form-control" name="firstname" placeholder="Firstname" type="text" required
+                                autofocus />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                            <input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                            <input class="form-control" name="email" placeholder="E-mail" type="text" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                            <select class="form-control" id="sel1">
+                                <option>I would like to:</option>
+                                <option>I have a general question</option>
+                                <option>I would like a detailed quotation for a specific journey</option>
+                                <option>Set up a consultation for a "From Scratch" Journey</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                            <select class="form-control" id="sel1">
+                                <option>Select a journey</option>
+                                <option>W-Trek from West to East: See the Towers at Sunrise</option>
+                                <option>Tour du Mont Blanc - Self Guided</option>
+                                <option>W-Trek East to West - in comfort and style</option>
+                                <option>The Great Self Guided Treks of Patagonia - W-Trek and El Chaltén</option>
+                                <option>From Scratch South African Adventure</option>
+                                <option>Adventurous Argentina</option>
+                                <option>Tour du Mont Blanc - Privately Guided with Glacier hiking</option>
+                                <option>Secrets of the Bolivian Altiplano</option>
+                                <option>Refugio Ecologico Caiman</option>
+                                <option>Sukau Rainforest Lodge</option>
+                                <option>Skorpios Cruises Patagonia - Chonos Route</option>
+                                <option>Endangered wildlife of Borneo</option>
+                                <option>Explora Patagonia</option>
+                                <option>The Lodge at Chaa Creek</option>
+                                <option>The Uchupiamonas at Chalalan</option>
+                                <option>Awasi Atacama</option>
+                                <option>Multi-Sport adventure near Mont Blanc</option>
+                                <option>Campi Ya Kanzi</option>
+                                <option>Fazenda Barranco Alto</option>
+                                <option>Remota Lodge</option>
+                                <option>Eco Camp Patagonia</option>
+                                <option>Kichwa Añangu</option>
+                                <option>Explorer's Inn Tambopata Ecolodge</option>
+                                <option>Kapawi Eco Lodge and Reserve</option>
+                                <option>The Highlands</option>
+                                <option>11 Day Safari in Tanzania: The Western Circuit</option>
+                                <option>Self Guided W-Trek and Multi-Sport Adventure in Patagonia</option>
+                                <option>Camino de Santiago Self Guided - 14 nights</option>
+                                <option>The Haute Route - Self-Guided Tour</option>
+                                <option>The West Highland Way</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                            <input class="form-control" id="datepickerstart" name="startdate"
+                                placeholder="Select start date" required autofocus />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                            <input class="form-control" id="datepickerend" name="enddate" placeholder="Select end date"
+                                required autofocus />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                            <input class="form-control" name="quantity" placeholder="Number of people?" type="text"
+                                required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                            <textarea class="form-control" name="message" placeholder="Your message" rows="4"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+                            <div>
+                                <span></span>
+                                <strong>More Service:</strong> 24 hours a day while you travel
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+                            <div>
+                                <span></span>
+                                <strong>More Trust:</strong> price transparency and never lose your deposit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+                            <div>
+                                <span></span>
+                                <strong>More Expertise:</strong> 40 countries and counting
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 services" style="padding-bottom: 10px;">
+                            <div style="display: inline-block;">
+                                <span></span>
+                                <strong>More Customization:</strong> Pygmy Itineraries are completely customizable
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button big">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 	   <script src="js/jquery.min.js"></script>
             <script src="js/popper.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
