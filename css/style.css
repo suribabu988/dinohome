@@ -106,7 +106,7 @@ header #logo {
 
 header #logo a {
     display: block;
-    background: url(../../images/dinosmall.png) no-repeat top left transparent;
+    background: url(../images/dinosmall.png) no-repeat top left transparent;
     display: inline-block;
     zoom: 1;
     background-position: 0px 0px;
