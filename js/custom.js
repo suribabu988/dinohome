@@ -181,8 +181,8 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 	
 	var url = $(location).attr('href');
 	var hostUrl = window.location.host + '/tours.html';
-	var removeData = url.replace('http://' + hostUrl, "");
-	var clickUrl = 'http://' + hostUrl + removeData + '';
+	var removeData = url.replace('https://' + hostUrl, "");
+	var clickUrl = 'https://' + hostUrl + removeData + '';
 	var clickCategory = removeData.replace("#", "");
 	if (clickUrl == url && clickCategory != "") {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
