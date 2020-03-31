@@ -181,7 +181,7 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 	
 
 	var url = $(location).attr('href');
-	var hostUrl = window.location.host + 'tours.html';
+	var hostUrl = window.location.host + 'dinohome/tours.html';
 	var removeData = url.replace('https://' + hostUrl, "");
 	var clickUrl = 'https://' + hostUrl + removeData + '';
 	var clickCategory = removeData.replace("#", "");
