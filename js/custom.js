@@ -178,6 +178,13 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 	});
 
 //tours tabs linking
+
+	// $('.miles-right a.mileslink').on('click',function(){
+	// 	tourLink = $(this).attr('href');
+	// 	tourId = tourLink.replace('tours.html#', '');
+
+	// });
+
 	var url = $(location).attr('href');
 	var hostUrl = window.location.host + '/tours.html';
 	var removeData = url.replace('http://' + hostUrl, "");
