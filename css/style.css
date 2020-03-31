@@ -99,19 +99,19 @@ header .container {
 header #logo {
     display: inline-block;
     vertical-align: top;
-    margin-right: 126px;
-    margin-top: 34px;
-    width: 89px;
+    margin-right: 110px;
+    margin-top: 5px;
+    width: 132px;
 }
 
 header #logo a {
     display: block;
-    background: url(../images/dinosmall.png) no-repeat top left transparent;
+    background: url(../images/logo_min.png) no-repeat top left transparent;
     display: inline-block;
     zoom: 1;
     background-position: 0px 0px;
-    width: 89px;
-    height: 89px;
+    width: 132px;
+    height: 132px;
     text-indent: -6000px;
     text-align: left;
 }
@@ -2428,14 +2428,14 @@ form.inguireForm .services>div strong {
 
 .menuFullScreen .left .logo {
     position: absolute;
-    top: 3%;
+    top: 5px;
     left: 18%;
     background: url(../images/dinologo_min.png) no-repeat top left transparent;
     display: inline-block;
     zoom: 1;
     /* background-position: -594px -160px; */
-    width: 100px;
-    height: 143px;
+    width: 129px;
+    height: 170px;
     text-indent: -6000px;
     text-align: left;
     z-index: 3;
