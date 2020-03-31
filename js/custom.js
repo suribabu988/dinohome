@@ -76,10 +76,10 @@ $(document).ready(function () {
 	});
 
 	// Modal video
-	var url = $("#cartoonVideo").attr('src');
+	var urlVideo = $("#cartoonVideo").attr('src');
 	$("#cartoonVideo").attr('src', '');
 	$("#videoHome").on('shown.bs.modal', function () {
-		$("#cartoonVideo").attr('src', url);
+		$("#cartoonVideo").attr('src', urlVideo);
 	});
 	$("#videoHome").on('hide.bs.modal', function () {
 		$("#cartoonVideo").attr('src', '');
@@ -175,12 +175,12 @@ $(document).ready(function () {
 
 
 	var url = $(location).attr('href');
-	var hostUrl = window.location.host + '/tours.html';
-	var removeData = url.replace('http://' + hostUrl, "");
-	var clickUrl = 'http://' + hostUrl + removeData + '';
-	// var hostUrl = window.location.host + '/dinohome/tours.html';
-	// var removeData = url.replace('https://' + hostUrl, "");
-	// var clickUrl = 'https://' + hostUrl + removeData + '';
+	// var hostUrl = window.location.host + '/destination.html';
+	// var removeData = url.replace('http://' + hostUrl, "");
+	// var clickUrl = 'http://' + hostUrl + removeData + '';
+	var hostUrl = window.location.host + '/dinohome/destination.html';
+	var removeData = url.replace('https://' + hostUrl, "");
+	var clickUrl = 'https://' + hostUrl + removeData + '';
 	var clickCategory = removeData.replace("#", "");
 	// console.log('url: ' + url + ' hostUrl ' + hostUrl + ' removeData ' + removeData + ' clickUrl ' + clickUrl +' clickCategory '+clickCategory);
 	if (clickUrl == url && clickCategory != "") {
