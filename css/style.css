@@ -2237,26 +2237,26 @@ form.inguireForm .services>div strong {
 }
 
 .LeftslideOpen {
-    -webkit-animation: openLeft 2s;
-    animation: openLeft 2s;
+    -webkit-animation: openLeft 1s;
+    animation: openLeft 1s;
     animation-fill-mode: forwards;
 }
 
 .RightslideOpen {
-    -webkit-animation: openRight 2s;
-    animation: openRight 2s;
+    -webkit-animation: openRight 1s;
+    animation: openRight 1s;
     animation-fill-mode: forwards;
 }
 
 .LeftslideClose {
-    -webkit-animation: closeLeft 2s;
-    animation: closeLeft 2s;
+    -webkit-animation: closeLeft 1s;
+    animation: closeLeft 1s;
     animation-fill-mode: forwards;
 }
 
 .RightslideClose {
-    -webkit-animation: closeRight 2s;
-    animation: closeRight 2s;
+    -webkit-animation: closeRight 1s;
+    animation: closeRight 1s;
     animation-fill-mode: forwards;
 }
 
@@ -3516,6 +3516,10 @@ footer .copyright a {
 .tabsContainer>.container>.tab-content>.praticalInfos .pictos>div p {
     font-size: 13px;
     margin-top: 4px;
+}
+
+.is-hidden {
+    display: none !important;
 }
 
 

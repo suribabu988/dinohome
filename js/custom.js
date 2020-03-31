@@ -47,7 +47,7 @@ $('.menuButton').click(function(){
 			$('.menuFullScreen .left').addClass('LeftslideClose').removeClass('LeftslideOpen');
 			setTimeout(function () {
 				$('.menuFullScreen').addClass('menuNone');
-			}, 1500);
+			}, 500);
 	});
 
 
@@ -177,20 +177,19 @@ $('.menuFullScreen .right nav a').mouseleave(function(){
 		});
 	});
 
-
-	// $('.miles-right .padtp a.mileslink').on('click',function(){
-	// 	var categoryLink = $(this).attr('href');
-	// 	var categoryId = categoryLink.replace("tours.html#", "");
-	// 	var oldUrl;
-	// 		$("html, body").animate({ scrollTop: 0 }, "slow");
-	// 	$('.epicbg #experience .nav-tabs a[href^="#"]').each(function(){ 
-	// 		$('.epicbg #experience .nav-tabs .nav-link.mileslink').css('display','none');
-	// 		oldUrl = $(this).attr("href");
-	// 		alert(oldUrl);
-	// 		if(oldUrl == categoryId){
-	// 			$(this).css('display','block');
-	// 		}
-		// });
-	//	});
+//tours tabs linking
+	var url = $(location).attr('href');
+	var hostUrl = window.location.host + '/tours.html';
+	var removeData = url.replace('http://' + hostUrl, "");
+	var clickUrl = 'http://' + hostUrl + removeData + '';
+	var clickCategory = removeData.replace("#", "");
+	console.log('url: ' + url + ' hostUrl ' + hostUrl + ' removeData ' + removeData + ' clickUrl ' + clickUrl +' clickCategory '+clickCategory);
+	if (clickUrl == url && clickCategory != "") {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		$('.nav.nav-tabs .nav-link').removeClass('active').removeClass('show');
+		$('.nav.nav-tabs .nav-link[data-tour=' + clickCategory + ']').addClass('active').addClass('show');
+		$('.tab-content>.active').removeClass('active').removeClass('show');
+		$('.tab-content>.tab-pane[id='+clickCategory+']').addClass('active').addClass('show');
+	}
 
 });
