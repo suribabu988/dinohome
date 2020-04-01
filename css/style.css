@@ -782,8 +782,40 @@ header .menu nav a {
     display: none !important;
 }
 
+.pilgrimage {
+    background: url(../images/pilgrimage-bg.png) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 74px;
+    padding-bottom: 300px;
+    text-align: center;
+    position: relative;
+    /* z-index: -2; */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.pilgrimage h2 {
+    font-size: 38px;
+    color: #2e2e2c;
+    font-weight: 900;
+}
+
+.pilgrimage p {
+    color: #6b6969;
+    line-height: 160%;
+    font-size: 16px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
 .tripsVideo {
-    background: url(../../static/img/home_video_bg.jpg) no-repeat center center transparent;
+    background: url(../images/home_video_bg.jpg) no-repeat center center transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1087,6 +1119,12 @@ header .menu nav a {
     padding: 0 35px;
 }
 
+.button.big:hover,
+.button.big:active {
+    background-color: #f1df1e;
+    color: #ffffff;
+}
+
 .epicbg {
     background: url(../images/content_bg.png) repeat-x top center transparent;
     padding-top: 0;
@@ -1172,6 +1210,11 @@ header .menu nav a {
 .item-filter-sub-select {
     padding: 8px 16px;
 }
+
+/* select.item-filter-sub-select.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+} */
 
 /* packages  */
 .contentInner {
@@ -3522,6 +3565,253 @@ footer .copyright a {
     display: none !important;
 }
 
+/* #aboutTabs.dinotStaggerAppear.tabsContainer .travelTabs .nav-tabs .nav-item {
+    border-right: none;
+    margin: 0 auto;
+} */
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines {
+    text-align: center;
+    padding: 0 15%;
+    border-left: none;
+    border-right: none;
+    line-height: 40px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines .nav-item a.nav-link {
+    color: #b4b4b4;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines .nav-item a.nav-link:hover,
+#aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines .nav-item a.nav-link.active {
+    color: #53af3a;
+}
+
+/* #aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines .nav-item:hover a.nav-link:after,
+#aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines .nav-item.active a.nav-link:after {
+    left: 20%;
+    right: 70%;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .container.lrlines .nav-item a.nav-link:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    right: 50%;
+    bottom: -2px;
+    background: #d5d5d5;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+} */
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: url(../images/spirit_image_01.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .text {
+    line-height: 512px;
+    background: url(../images/spirit_bg_01.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .text .middle,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .text .middle,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .text .middle {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 20px 20px 20px 10.5%;
+    max-width: 610px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .text h2,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .text h2,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .text h2 {
+    font-size: 56px;
+    font-weight: 900;
+    color: #080d0e;
+    text-transform: none;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .text h3,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .text h3,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .text h3 {
+    font-weight: 400;
+    font-size: 28px;
+    color: #b18857;
+    text-align: left;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .text h3:before,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .text h3:before,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .text h3:before {
+    content: '';
+    background: url(../images/sprite.png) no-repeat top left transparent;
+    display: inline-block;
+    zoom: 1;
+    background-position: 0 -92px;
+    width: 81px;
+    height: 7px;
+    text-indent: -6000px;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .text p,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .text p,
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .text p {
+    line-height: 160%;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: url(../images/spirit_image_02.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .text {
+    line-height: 512px;
+    background: url(../images/spirit_bg_02.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: url(../images/spirit_image_03.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .text {
+    line-height: 512px;
+    background: url(../images/spirit_bg_03.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers {
+    background: #fbf9fa
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers h2 {
+    font-size: 56px;
+    text-align: center;
+    color: #080d0e;
+    text-transform: none;
+    padding-top: 90px;
+    margin-bottom: 70px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers h2:after {
+    content: '';
+    background: url(../images/sprite.png) no-repeat top left transparent;
+    display: inline-block;
+    zoom: 1;
+    background-position: 0 -92px;
+    width: 81px;
+    height: 7px;
+    text-indent: -6000px;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing {
+    max-width: 770px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing .appearContainer:first-child {
+    margin-top: 0;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing .item {
+    padding-left: 80px;
+    position: relative;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing .item .pix.adjustment {
+    background-position: -208px -525px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing .item .pix {
+    background: url(../images/sprite.png) no-repeat top left transparent;
+    display: inline-block;
+    zoom: 1;
+    background-position: -143px -525px;
+    width: 55px;
+    height: 55px;
+    text-indent: -6000px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing .item h3 {
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    color: #080d0e;
+    letter-spacing: 4px;
+    text-transform: none;
+    padding-top: 7px;
+    margin-bottom: 20px;
+}
+
+#aboutTabs.dinotStaggerAppear.tabsContainer .ouroffers .pricing .item p {
+    line-height: 170%;
+}
+
+
 
 /**Media Queries**/
 @media only screen and (max-width: 1199px) {
@@ -3901,4 +4191,12 @@ footer .copyright a {
         margin-left: 0;
         text-align: left;
     }
+
+    #aboutTabs.dinotStaggerAppear.tabsContainer .ourstory .image,
+    #aboutTabs.dinotStaggerAppear.tabsContainer .ourvalues .image,
+    #aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .image {
+        position: relative;
+        min-height: 300px;
+    }
+
 }

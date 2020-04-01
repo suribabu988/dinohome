@@ -112,13 +112,14 @@ $(document).ready(function () {
 
 	// select box
 	$('.item-filter-select').on('change', function () {
+	//		$('.item-filter-sub-select').removeClass('.disabled');
 		if (this.value == 'all') {
 			$('.item').show();
 		} else {
 			var elems = $('.item[data-type="' + this.value + '"]');
 			$('.item').not(elems).hide();
 			elems.show();
-			$('.item-filter-sub-select').on('change', function () {
+				$('.item-filter-sub-select').on('change', function () {
 				if (this.value == 'all') {
 					$('.subitem').show();
 				} else {
@@ -156,6 +157,43 @@ $(document).ready(function () {
 
 	// scroll
 
+	// var scrollNav = $('header nav a');
+	// scrollNav.click(function (e) {
+	// 	e.preventDefault();
+	// 	$('body,html').animate({
+	// 		scrollTop: $(this.hash).offset().top - 5
+	// 	}, 1000);
+	// });
+
+
+	var scrollLink = $('#aboutTabs .navbar .navbar-nav .nav-item a.nav-link');
+
+		// Smooth scrolling
+		scrollLink.click(function (e) {
+			e.preventDefault();
+			$('body,html').animate({
+				scrollTop: $(this.hash).offset().top - 70
+			}, 1000);
+			scrollLink.removeClass('active');
+			$(this).addClass('active');
+		});
+
+		// Active link switching
+		$(window).scroll(function () {
+			var scrollbarLocation = $(this).scrollTop();
+
+			scrollLink.each(function () {
+
+				var sectionOffset = $(this.hash).offset().top - 70;
+
+				if (sectionOffset <= scrollbarLocation) {
+					$(this).parent().addClass('active');
+					$(this).parent().siblings().removeClass('active');
+				}
+			})
+
+		})
+
 	$(".menuFullScreen .left .moreItems .moreItem>.logo").show();
 	$(".menuFullScreen .left .moreItems .moreItem").is(function () {
 		var $textThis = $(this);
@@ -182,7 +220,6 @@ $(document).ready(function () {
 	var removeData = url.replace('https://' + hostUrl, "");
 	var clickUrl = 'https://' + hostUrl + removeData + '';
 	var clickCategory = removeData.replace("#", "");
-	// console.log('url: ' + url + ' hostUrl ' + hostUrl + ' removeData ' + removeData + ' clickUrl ' + clickUrl +' clickCategory '+clickCategory);
 	if (clickUrl == url && clickCategory != "") {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 		$('.nav.nav-tabs .nav-link').removeClass('active').removeClass('show');
