@@ -24,10 +24,10 @@
                     <a href="mailto:dinotravel24@gmail.com">dinotravel24@gmail.com</a>
                 </div>
                 <nav>
-                    <a class="destinations" href="#destination">Destinations</a>
-                    <a class="experiences" href="#dino-experience">Experiences</a>
-                    <a href="#">Pilgrimage</a>
-                    <a href="#">About</a>
+                    <a class="destinations" href="destination.html">Destinations</a>
+                    <a class="experiences" href="index.html#dino-experience">Experiences</a>
+                    <a href="index.html#pilgrimage">Pilgrimage</a>
+                    <a href="about.html">About</a>
                     <a class="enquire popup" data-toggle="modal" href="#InguireModal">Let's Talk! </a>
                 </nav>
             </div>
@@ -81,7 +81,7 @@
 
 
     <section id="aboutTabs" class="dinotStaggerAppear tabsContainer">
-        <div class="navbar navbar-expand-sm bg-light travelTabs specificInjetion">
+        <div class="navbar navbar-expand-sm bg-light travelTabs specificInjetion d-none d-sm-block">
             <ul id="nav-tabs-wrapper" class="navbar-nav container lrlines stiky-top">
                 <li class="nav-item">
                     <a class="nav-link active" href="#ourstory">Our Story</a>
@@ -106,15 +106,15 @@
                     <div class="text">
                         <div class="middle">
                             <div class="appearContainer">
-                                <h2 class="appear">Our Story</h2>
+                                <h2 class="appear" data-aos="fade-right">Our Story</h2>
                             </div>
                             <div class="appearContainer">
-                                <h3 class="page01">One day, one jump and
+                                <h3 class="page01" data-aos="fade-right">One day, one jump and
                                     two years of passion
                                 </h3>
                             </div>
                             <div class="appearContainer" style="overflow: hidden;">
-                                <p class="page01">After jumping off the
+                                <p class="page01" data-aos="fade-right">After jumping off the
                                     side of a cliff with
                                     only a cord attached in the Swiss Alps, our founder couldn't go back to his day job.
                                     Instead, he set out
@@ -136,13 +136,13 @@
                     <div class="text">
                         <div class="middle">
                             <div class="appearContainer">
-                                <h2 class="appear">Our Values</h2>
+                                <h2 class="appear" data-aos="fade-left">Our Values</h2>
                             </div>
-                            <div class="appearContainer">Journeys worth taking
+                            <div class="appearContainer" data-aos="fade-left">Journeys worth taking
                                 </h3>
                             </div>
                             <div class="appearContainer">
-                                <p class="page02">We prefer to work with
+                                <p class="page02" data-aos="fade-left">We prefer to work with
                                     locally owned and operated lodging
                                     and tour operators. This allows more money to stay inside of local communities and
                                     in the hands of people who live
@@ -174,15 +174,15 @@
                     <div class="text">
                         <div class="middle">
                             <div class="appearContainer">
-                                <h2 class="appear">Our Travelers</h2>
+                                <h2 class="appear" data-aos="fade-right">Our Travelers</h2>
                             </div>
                             <div class="appearContainer">
-                                <h3 class="page01">Benefits our traveler's
+                                <h3 class="page01" data-aos="fade-right">Benefits our traveler's
                                     Enjoy
                                 </h3>
                             </div>
                             <div class="appearContainer">
-                                <p class="page03">More service: Clients
+                                <p class="page03" data-aos="fade-right">More service: Clients
                                     receive support 24/7 with a direct
                                     line to your travel expert.<br>
                                     <br>
@@ -204,14 +204,14 @@
 
             <div id="ouroffers" class="row ouroffers m-0"><br>
                 <div class="container">
-                <h2 class="detectPricing">Our Pricing Guarantees</h2>
+                <h2 class="detectPricing" data-aos="fade-up">Our Pricing Guarantees</h2>
                 <div class=" appearContainer">
                     <div class="pricing appear opacity">
                         <div class="appearContainer">
                             <div class="item staggerPricing">
                                 <div class="pix adjustment"></div>
-                                <h3>Never lose your deposit</h3>
-                                <p>For Pygmy and From Scratch itineraries, if you must cancel for any reason not covered under
+                                <h3 data-aos="fade-up">Never lose your deposit</h3>
+                                <p data-aos="fade-up">For Pygmy and From Scratch itineraries, if you must cancel for any reason not covered under
                                     insurance, we will waive the deposit on any future Pygmy or From Scratch Itinerary of equal value.
                                 </p>
                             </div>
@@ -219,8 +219,8 @@
                         <div class="appearContainer">
                             <div class="item staggerPricing">
                                 <div class="pix transparency"></div>
-                                <h3>Pricing Transparency</h3>
-                                <p>With private tour production, it is almost unheard of to provide a price breakdown of lodging,
+                                <h3 data-aos="fade-up">Pricing Transparency</h3>
+                                <p data-aos="fade-up">With private tour production, it is almost unheard of to provide a price breakdown of lodging,
                                     guides, transfers, equipment and fees. We don’t think that is fair to the traveler. With our pricing
                                     transparency, you will see an itemized breakdown of costs. When we work with local partners who
                                     organize the bulk of the trip, we estimate costs to help you understand where your money is going.
@@ -587,11 +587,11 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" id="datepickerstart" name="startdate"
+                                                <input class="form-control datepickerstart" name="startdate"
                                                     placeholder="Select start date" required autofocus />
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" id="datepickerend" name="enddate"
+                                                <input class="form-control datepickerend" name="enddate"
                                                     placeholder="Select end date" required autofocus />
                                             </div>
                                         </div>
@@ -658,12 +658,12 @@
         <div class="right middleParent">
             <div class="close">Close</div>
             <nav class="">
-                <a href="/" class="sidenavHome selected" data-sidelink="home">Home</a>
-                <a class="destinations" href="index.html#destination" data-sidelink="destinations">Destinations</a>
-                <a class="experiences" href="index.html#dino-experience" data-sidelink="experiences">Experiences</a>
-                <a href="#" data-sidelink="pilgrimage">Pilgrimage</a>
-                <a href="#" data-sidelink="about">About</a>
-                <a class="enquire" href="#" data-sidelink="enquire">Let's Talk! </a>
+                        <a href="/" class="nav-link active" data-sidelink="home">Home</a>
+                        <a class="nav-link" href="destination.html" data-sidelink="destinations">Destinations</a>
+                        <a class="nav-link" href="index.html#dino-experience" data-sidelink="experiences">Experiences</a>
+                        <a class="nav-link" href="index.html#pilgrimage" data-sidelink="pilgrimage">Pilgrimage</a>
+                        <a class="nav-link" href="about.html" data-sidelink="about">About</a>
+                        <a class="nav-link enquire" data-toggle="modal" href="#InguireModal" data-sidelink="enquire">Let's Talk! </a>
             </nav>
             <div class="contact">
                 <a href="tel:+917893631224" class="tel">+91 78936 31224</a>
@@ -752,11 +752,11 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                <input class="form-control" id="datepickerstart" name="startdate"
+                                <input class="form-control datepickerstart" name="startdate"
                                     placeholder="Select start date" required autofocus />
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                <input class="form-control" id="datepickerend" name="enddate"
+                                <input class="form-control datepickerend" name="enddate"
                                     placeholder="Select end date" required autofocus />
                             </div>
                         </div>
@@ -814,17 +814,9 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <script>
-        $('#datepickerstart').datepicker({
-            uiLibrary: 'bootstrap4'
-        });
-        $('#datepickerend').datepicker({
-            uiLibrary: 'bootstrap4'
-        });
-    </script>
 </body>
 
 </html>

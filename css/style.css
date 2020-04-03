@@ -1144,6 +1144,10 @@ header .menu nav a {
     margin-top: 66px;
 }
 
+.epicbg .travels.dinoTravelAppear .item-display .item {
+    display: inline;
+}
+
 .epicbg .experienceDetails .top .sprite.epic-journey {
     background: url(../images/epic-journey.png) no-repeat 0px 0px transparent;
 }
@@ -2304,7 +2308,7 @@ form.inguireForm .services>div strong {
 }
 
 .menuFullScreen.menuNone {
-    display: none;
+    display: none !important;
 }
 
 .menuFullScreen .right .close {
@@ -2349,9 +2353,10 @@ form.inguireForm .services>div strong {
     width: 100%;
     vertical-align: middle;
     line-height: normal;
+    padding-top: 15%;
 }
 
-.menuFullScreen .right nav a.selected {
+.menuFullScreen .right nav a.active {
     color: #53af3a;
     cursor: default;
 }
@@ -2363,7 +2368,7 @@ form.inguireForm .services>div strong {
     text-transform: uppercase;
     font-size: 18px;
     display: block;
-    line-height: 40px;
+    line-height: 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
@@ -3171,6 +3176,11 @@ footer .copyright a {
     overflow: hidden;
 }
 
+.epicbg .nav-link.mileslink.subitem {
+    display: inline-block;
+    width: 33.1%;
+}
+
 .talkToAdventurer {
     position: relative;
     text-align: center;
@@ -3894,8 +3904,9 @@ footer .copyright a {
 }
 
 @media only screen and (max-width: 1024px) {
-    .miles-right .text {
-        /* padding: 0 19%; */
+    .epicbg .nav-link.mileslink.subitem {
+        display: inline-block;
+        width: 32.9%;
     }
 }
 
@@ -3961,7 +3972,7 @@ footer .copyright a {
 @media (max-height: 560px) {
     html .menuFullScreen .right nav a {
         font-size: 16px;
-        line-height: 28px;
+        line-height: 16px;
     }
 }
 
@@ -4040,6 +4051,7 @@ footer .copyright a {
     .fullHeight .middle {
         margin: 15%;
     }
+
 }
 
 @media only screen and (orientation: landscape) and (max-width:767px) {
@@ -4197,6 +4209,26 @@ footer .copyright a {
     #aboutTabs.dinotStaggerAppear.tabsContainer .ourtravelers .image {
         position: relative;
         min-height: 300px;
+    }
+
+    .epicbg .nav-link.mileslink.subitem {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .epicbg .nav-link.mileslink.subitem .text {
+        line-height: 10;
+    }
+
+    .epicbg .nav-link.mileslink.subitem .middle {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .epicbg .nav-link.mileslink.subitem .middle h2 {
+        font-size: 11px;
+        font-weight: 600;
+        word-break: break-word;
     }
 
 }

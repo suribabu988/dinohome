@@ -90,7 +90,8 @@ $(document).ready(function () {
 		var linkAttr = $(this).attr('data-id');
 		$('.destination .container .map .continents img').filter('[data-cont=' + linkAttr + ']').css('opacity', '1');
 
-	});
+	});		
+
 	$('.destination .container .map .links a').mouseleave(function () {
 		var linkAttr = $(this).attr('data-id');
 		$('.destination .container .map .continents img').filter('[data-cont=' + linkAttr + ']').css('opacity', '0');
@@ -108,6 +109,13 @@ $(document).ready(function () {
 	$('.menuFullScreen .right nav a').mouseleave(function () {
 		var sideLink = $(this).attr('data-sidelink');
 		$(this).css('color', 'white');
+	});
+	$('.menuFullScreen .right nav a').click(function () {
+		$('.menuFullScreen .right').addClass('RightslideClose').removeClass('RightslideOpen');
+		$('.menuFullScreen .left').addClass('LeftslideClose').removeClass('LeftslideOpen');
+		setTimeout(function () {
+			$('.menuFullScreen').addClass('menuNone');
+		}, 500);
 	});
 
 	// select box
@@ -154,7 +162,6 @@ $(document).ready(function () {
 		$(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());
 		$(".menuFullScreen.left.moreItems.moreItem >.text").css('background', '#fff');
 	});
-
 	// scroll
 
 	// var scrollNav = $('header nav a');
@@ -211,14 +218,15 @@ $(document).ready(function () {
 
 	//tours tabs linking
 
-
 	var url = $(location).attr('href');
 	// var hostUrl = window.location.host + '/destination.html';
 	// var removeData = url.replace('http://' + hostUrl, "");
 	// var clickUrl = 'http://' + hostUrl + removeData + '';
+
 	var hostUrl = window.location.host + '/dinohome/destination.html';
 	var removeData = url.replace('https://' + hostUrl, "");
 	var clickUrl = 'https://' + hostUrl + removeData + '';
+
 	var clickCategory = removeData.replace("#", "");
 	if (clickUrl == url && clickCategory != "") {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -227,5 +235,21 @@ $(document).ready(function () {
 		$('.tab-content>.active').removeClass('active').removeClass('show');
 		$('.tab-content>.tab-pane[id=' + clickCategory + ']').addClass('active').addClass('show');
 	}
+
+	// count
+	//var indiaPackage = $('.epicbg #india .nav-link.mileslink.subitem').length;
+	//localStorage.setItem("Indiapackage", indiaPackage);
+	//var indiaPackages = localStorage.getItem("Indiapackage");
+//	$('.destination .container ul li a span').load('destination.html'+ indiaPackage);
+	//console.log(indiaPackage);
+
+//datepicker
+	$('.datepickerstart').datepicker({
+		uiLibrary: 'bootstrap4'
+	});
+	$('.datepickerend').datepicker({
+		uiLibrary: 'bootstrap4'
+	});
+
 
 });
