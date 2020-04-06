@@ -216,6 +216,7 @@ $(document).ready(function () {
 		});
 	});
 
+
 	//tours tabs linking
 
 	var url = $(location).attr('href');
@@ -233,8 +234,18 @@ $(document).ready(function () {
 		$('.nav.nav-tabs .nav-link').removeClass('active').removeClass('show');
 		$('.nav.nav-tabs .nav-link[data-tour=' + clickCategory + ']').addClass('active').addClass('show');
 		$('.tab-content>.active').removeClass('active').removeClass('show');
-		$('.tab-content>.tab-pane[id=' + clickCategory + ']').addClass('active').addClass('show');
-	}
+		$('.tab-content>.tab-pane[id=' + clickCategory + ']').addClass('active').addClass('show')
+		}
+
+	$('footer .container .column ul li a').click(function () {
+		var disHref = $(this).attr('href');
+		var removeHash = disHref.replace('destination.html#', "");
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		$('.nav.nav-tabs .nav-link').removeClass('active').removeClass('show');
+		$('.nav.nav-tabs .nav-link[data-tour=' + removeHash + ']').addClass('active').addClass('show');
+		$('.tab-content>.active').removeClass('active').removeClass('show');
+		$('.tab-content>.tab-pane[id=' + removeHash + ']').addClass('active').addClass('show')
+	});
 
 
 //datepicker
@@ -245,5 +256,8 @@ $(document).ready(function () {
 		uiLibrary: 'bootstrap4'
 	});
 
+
+	
+	
 
 });
