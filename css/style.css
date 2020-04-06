@@ -1009,6 +1009,14 @@ header .menu nav a {
     backface-visibility: hidden;
 }
 
+.destination .container .map .links a .fa.fa-map-marker {
+    font-size: 25px;
+}
+
+.destination .container ul li a .fa.fa-map-marker {
+    color: #53af3a;
+}
+
 .destination .container .map .links a.europe {
     left: 57%;
     top: 34.1%;
@@ -3649,7 +3657,7 @@ footer .copyright a {
     width: 100%;
     vertical-align: middle;
     line-height: normal;
-    padding: 20px 20px 20px 10.5%;
+    padding: 100px 20px 100px 10.5%;
     max-width: 610px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

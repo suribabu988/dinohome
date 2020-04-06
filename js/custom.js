@@ -191,7 +191,7 @@ $(document).ready(function () {
 
 			scrollLink.each(function () {
 
-				var sectionOffset = $(this.hash).offset().top - 70;
+				var sectionOffset = $(this.hash).offset().top - 100;
 
 				if (sectionOffset <= scrollbarLocation) {
 					$(this).parent().addClass('active');
@@ -236,12 +236,6 @@ $(document).ready(function () {
 		$('.tab-content>.tab-pane[id=' + clickCategory + ']').addClass('active').addClass('show');
 	}
 
-	// count
-	//var indiaPackage = $('.epicbg #india .nav-link.mileslink.subitem').length;
-	//localStorage.setItem("Indiapackage", indiaPackage);
-	//var indiaPackages = localStorage.getItem("Indiapackage");
-//	$('.destination .container ul li a span').load('destination.html'+ indiaPackage);
-	//console.log(indiaPackage);
 
 //datepicker
 	$('.datepickerstart').datepicker({
