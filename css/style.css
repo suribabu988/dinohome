@@ -1142,6 +1142,7 @@ header .menu nav a {
     border-left: 1px solid #eeeaea;
     border-right: 1px solid #eeeaea;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .epicbg #experience .nav-tabs .nav-item {
